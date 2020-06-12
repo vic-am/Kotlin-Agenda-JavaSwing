@@ -32,6 +32,7 @@ class ContactBusiness {
 
     fun getContactCountDesc(): String {
         val list = getContactList()
+
         return when {
             list.isEmpty() -> "0 Contatos"
             list.size == 1 -> "1 Contato"
